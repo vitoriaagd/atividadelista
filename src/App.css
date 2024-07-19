@@ -1,38 +1,110 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f1a10;
+  color: #2e7d32;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #7b9b7e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #ccffce;
+  border-bottom: 2px solid #435c43;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Formulário */
+form {
+  background-color: #678568;
+  border-radius: 8px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  color: #284729;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4caf50;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+form button:hover {
+  background-color: #388e3c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Lista de Plantas */
+.PlantList {
+  margin-top: 20px;
+}
+
+.PlantList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.PlantList li {
+  background-color: #c8e6c9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.PlantList button {
+  background-color: #fa465e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.PlantList button:hover {
+  background-color: #c23e50;
+}
+
+.PlantList button:first-of-type {
+  background-color: #34b157;
+}
+
+.PlantList button:first-of-type:hover {
+  background-color: #4a8b5b;
 }
